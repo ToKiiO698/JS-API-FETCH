@@ -9,58 +9,73 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Shopping cart</title>
   </head>
-  <body>
-    <header>
-      <h1>Shopping list</h1>
-    </header>
-    <table id="table" class="table">
-      <tr>
-        <td>
-          <button id="0" type="button" class="btn btn-secondary">Pommes</button>
-        </td>
-        <td>
-          <button id="1" type="button" class="btn btn-secondary">peches</button>
-        </td>
-        <td>
-          <button id="2" type="button" class="btn btn-secondary">poires</button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <button id="3" type="button" class="btn btn-secondary">
-            bananes
-          </button>
-        </td>
-        <td>
-          <button id="4" type="button" class="btn btn-secondary">
-            oranges
-          </button>
-        </td>
-        <td>
-          <button id="5" type="button" class="btn btn-secondary">kiwis</button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <button id="6" type="button" class="btn btn-secondary">
-            raisins
-          </button>
-        </td>
-        <td>
-          <button id="7" type="button" class="btn btn-secondary">ananas</button>
-        </td>
-        <td>
-          <button id="8" type="button" class="btn btn-secondary">
-            cerises
-          </button>
-        </td>
-      </tr>
-    </table>
-    <h2>Shopping cart</h2>
-    <table id="table2"></table>
+  <body class="backcolor">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-center h1color">Shopping list</h1>
+        <table id="table" class="table table-dark table-striped">
+          <tr>
+            <td>
+              <button id="0" type="button" class="btn btn-secondary">
+                Pommes
+              </button>
+            </td>
+            <td>
+              <button id="1" type="button" class="btn btn-secondary">
+                peches
+              </button>
+            </td>
+            <td>
+              <button id="2" type="button" class="btn btn-secondary">
+                poires
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="3" type="button" class="btn btn-secondary">
+                bananes
+              </button>
+            </td>
+            <td>
+              <button id="4" type="button" class="btn btn-secondary">
+                oranges
+              </button>
+            </td>
+            <td>
+              <button id="5" type="button" class="btn btn-secondary">
+                kiwis
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="6" type="button" class="btn btn-secondary">
+                raisins
+              </button>
+            </td>
+            <td>
+              <button id="7" type="button" class="btn btn-secondary">
+                ananas
+              </button>
+            </td>
+            <td>
+              <button id="8" type="button" class="btn btn-secondary">
+                cerises
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-center h1color">Shopping cart</h2>
+        <table id="table2" class="table table-dark table-striped"></table>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

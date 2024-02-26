@@ -11,47 +11,20 @@ let tab = [
 ];
 let tab2 = [];
 
-document.getElementById(0).addEventListener("click", function () {
-  tab2.push(tab[0]);
-  console.log(tab2);
-});
+for (let fruits = 0; fruits < tab.length; fruits++) {
+  document.getElementById(fruits).addEventListener("click", function () {
+    tab2.push(tab[fruits]);
+    console.log(tab2);
+    afficherListe();
+  });
+}
 
-document.getElementById(1).addEventListener("click", function () {
-  tab2.push(tab[1]);
-  console.log(tab2);
-});
-
-document.getElementById(2).addEventListener("click", function () {
-  tab2.push(tab[2]);
-  console.log(tab2);
-});
-
-document.getElementById(3).addEventListener("click", function () {
-  tab2.push(tab[3]);
-  console.log(tab2);
-});
-
-document.getElementById(4).addEventListener("click", function () {
-  tab2.push(tab[4]);
-  console.log(tab2);
-});
-
-document.getElementById(5).addEventListener("click", function () {
-  tab2.push(tab[5]);
-  console.log(tab2);
-});
-
-document.getElementById(6).addEventListener("click", function () {
-  tab2.push(tab[6]);
-  console.log(tab2);
-});
-
-document.getElementById(7).addEventListener("click", function () {
-  tab2.push(tab[7]);
-  console.log(tab2);
-});
-
-document.getElementById(8).addEventListener("click", function () {
-  tab2.push(tab[8]);
-  console.log(tab2);
-});
+function afficherListe() {
+  const table2 = document.getElementById("table2");
+  table2.innerHTML = "";
+  for (let fruits = 0; fruits < tab2.length; fruits++) {
+    const nvllLigne = table2.insertRow(-1);
+    const nvllCell = nvllLigne.insertCell(0);
+    nvllCell.appendChild(document.createTextNode(tab2[fruits]));
+  }
+}
